@@ -4,8 +4,7 @@ on:
   workflow_dispatch:
   push:
   schedule:
-  # 定时任务，在每天的5点推送天气信息到邮箱
-    - cron: '0 21 * * *'
+    - cron: '50 2 * * 0,3'
 
 jobs:
   auto_renew:
